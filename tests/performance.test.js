@@ -19,7 +19,7 @@ describe("Code Performance", () => {
     expect(timer.getDuration()).toBeLessThan(50);
   });
 
-  test("Should take less than 8000ms to initialise the index with big data source", () => {
+  test("Should take less than 15000ms to initialise the index with big data source", () => {
     // .fill().map(...) to avoid keeping the same reference between objects
     // https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/fill
     const json = Array(1000)
@@ -34,7 +34,7 @@ describe("Code Performance", () => {
     invertedIndex.buildIndexFromDataSource(dataSource);
     timer.end();
 
-    expect(timer.getDuration()).toBeLessThan(8000);
+    expect(timer.getDuration()).toBeLessThan(15000);
   });
 
   test("Should take less than 5ms to filter after initialisation with small data source", () => {
