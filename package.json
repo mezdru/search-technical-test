@@ -1,0 +1,20 @@
+{
+  "name": "search-technical-test",
+  "version": "1.0.0",
+  "description": "Command-line interface. Filter elements containing a pattern and count elements children.",
+  "main": "app.js",
+  "author": "Quentin Drumez",
+  "repository": {
+    "url": "https://github.com/mezdru/search-technical-test"
+  },
+  "license": "ISC",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "jest": {
+    "collectCoverage": true
+  },
+  "devDependencies": {
+    "jest": "^29.6.1"
+  }
+}
